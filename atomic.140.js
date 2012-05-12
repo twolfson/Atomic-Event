@@ -1,0 +1,1 @@
+function(s,f,c){s={};return{after:function(n,f){c=s[n]=s[n]||[];c==1?f():c.push(f)},fire:function(n){for(c=s[n]||[];f=c.pop();)f();s[n]=1}}}
